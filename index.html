@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Score Counter</title>
+</head>
+
+<body>
+    <header>
+        <p>HOME</p>
+        <p>vs</p>
+        <p>GUEST</p>
+    </header>
+
+    <main>
+        <section class="score-card">
+            <div class="home-card">
+                <h2>HOME</h2>
+                <p class="home" id="home">0</p>
+                <div>
+                    <button onclick="homePointOne()">+1</button>
+                    <button onclick="homePointTwo()">+2</button>
+                    <button onclick="homePointThree()">+3</button>
+                </div>
+            </div>
+
+            <div class="home-card">
+                <h2>GUEST</h2>
+                <p class="guest" id="guest">0</p>
+                <div>
+                    <button onclick="guestPointOne()">+1</button>
+                    <button onclick="guestPointTwo()">+2</button>
+                    <button onclick="guestPointThree()">+3</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

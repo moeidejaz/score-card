@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "cursed timer";
+    src: url(/CursedTimerUlil-Aznm.ttf);
+}
+
+:root {
+    --PRI-FN: Verdana, Geneva, Tahoma, sans-serif;
+    --SEC-FN: cursed timer;
+    --PRI-CLR: #1B244A;
+    --SEC-CLR: #F94F6D;
+    --BTN-CLR: #6A78A2;
+    --BTN-BDR: #9AABD8;
+}
+
+header {
+    font-family: var(--PRI-FN);
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    background-color: #333;
+}
+
+header p:first-child {
+    color: green;
+}
+
+header p:nth-child(2) {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+header p:last-child {
+    color: rgb(190, 23, 87);
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-card {
+    background-color: var(--PRI-CLR);
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    justify-content: center;
+    gap: 4rem;
+    padding: 4rem;
+    border-radius: 10px;
+}
+
+.score-card h2 {
+    font-family: var(--PRI-FN);
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.home-card {
+    grid-row: 1;
+}
+
+.home,
+.guest {
+    font-family: var(--SEC-FN);
+    background-color: #000;
+    font-size: 5rem;
+    color: var(--SEC-CLR);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1rem 3rem 0rem 3rem;
+    margin: 1rem;
+}
+
+button {
+    color: var(--BTN-CLR);
+    font-family: var(--SEC-FN);
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 2px solid var(--BTN-BDR);
+    border-radius: 3px;
+    padding: 0.3rem;
+}
+
+button:nth-child(2) {
+    margin: 0px 8px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+.home-card,
+.guest-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:425px){
+
+    .score-card {
+        background-color: var(--PRI-CLR);
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 3;
+        justify-content: center;
+        gap: 0.35rem;
+        padding: 1rem 0rem;
+        border-radius: 10px;
+    }
+}
